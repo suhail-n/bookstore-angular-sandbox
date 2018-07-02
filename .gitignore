@@ -64,4 +64,8 @@ typings/
 .DS_Store
 
 #vs code
+.vscodedist
+
 .vscode
+
+dist

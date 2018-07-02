@@ -9,7 +9,8 @@ const appRoutes: Routes = [
     { path: '', component: HomeComponent, pathMatch: 'full' },
     { path: 'books', component: BooksComponent },
     { path: 'books/:id', component: BookDetailComponent },
-    { path: 'shopping-list', component: ShoppingListComponent }
+    { path: 'shopping-list', component: ShoppingListComponent },
+    { path: '**', redirectTo: ''}
 ];
 
 @NgModule({
