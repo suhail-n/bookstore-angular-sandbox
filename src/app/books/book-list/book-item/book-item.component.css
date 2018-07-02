@@ -1,0 +1,8 @@
+li.media {
+    margin: 30px 0;
+    cursor: pointer;
+    border-bottom: 1px solid #cecccc;
+}
+li.media:hover{
+    background-color: #f8f9fa;
+}

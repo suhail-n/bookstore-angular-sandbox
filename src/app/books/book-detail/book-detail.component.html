@@ -1,0 +1,50 @@
+<br>
+<div class="container">
+	<div class="row">
+		<div class="col-md-4">
+			<img src={{book.img}} class="img-fluid" alt="Responsive image">
+		</div>
+		<div class="col-md-8">
+			<h1>{{ book.title }}</h1>
+			<h5>by {{ book.author }}</h5>
+			<img style="width: 3em;" src="https://3f97c21cm2if3lrayt2ivf2v-wpengine.netdna-ssl.com/wp-content/uploads/2018/01/5-stars-icons-800x138.png"
+			 alt="rating">
+			<span class="link">
+				<a> 102 customers</a>
+			</span>
+
+			<br>
+			<p>Price:
+				<span class="price">CDN$ {{ book.price }}</span> &
+				<strong>FREE SHIPPING</strong>
+			</p>
+			<p>Pages:
+				<strong>{{ book.pages }}</strong>
+			</p>
+			<p>
+				Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+				Nibh sed pulvinar proin gravida hendrerit lectus a. Eu augue ut lectus arcu bibendum at varius. Turpis egestas maecenas
+				pharetra convallis posuere. Justo donec enim diam vulputate ut pharetra sit amet. Tellus mauris a diam maecenas sed enim
+				ut sem viverra. Lorem dolor sed viverra ipsum nunc aliquet bibendum enim. Elit scelerisque mauris pellentesque pulvinar.
+				Ut venenatis tellus in metus vulputate eu scelerisque. Pretium lectus quam id leo in vitae turpis massa. Consectetur
+				a erat nam at. Turpis tincidunt id aliquet risus feugiat. Laoreet suspendisse interdum consectetur libero id. Tempor
+				nec feugiat nisl pretium. Felis imperdiet proin fermentum leo vel. Diam quam nulla porttitor massa id. Eu sem integer
+				vitae justo eget magna fermentum. Tincidunt arcu non sodales neque sodales ut. Non enim praesent elementum facilisis
+				leo. Velit sed ullamcorper morbi tincidunt ornare massa eget. Sodales ut eu sem integer vitae justo eget magna. Ornare
+				arcu dui vivamus arcu felis bibendum. Sagittis vitae et leo duis ut diam. Ligula ullamcorper malesuada proin libero nunc
+				consequat. Tincidunt augue interdum velit euismod. Feugiat sed lectus vestibulum mattis ullamcorper velit.
+			</p>
+			<span class="quantity">
+				<input style="width: 50px;" type="number" [(ngModel)]="quantity">
+			</span>
+			<button class="btn btn-primary" (click)="onAddToCart()">Add to cart</button>
+		</div>
+	</div>
+	<div class="btn-toolbar" role="toolbar" aria-label="Toolbar with button groups">
+		<div class="btn-group mr-2" role="group">
+		</div>
+		<div class="btn-group mr-2" role="group">
+			<button class="btn btn-primary" (click)="goBack()">Back</button>
+		</div>
+	</div>
+</div>

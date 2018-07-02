@@ -1,0 +1,28 @@
+<li class="media">
+    <img class="mr-3" [src]="book.img" alt="Card image cap" style="max-height: 10em;" (click)="onClickHandler()">
+    <div class="media-body">
+        <div (click)="onClickHandler()">
+            <h4 class="mt-0">{{ book.title }}</h4>
+    
+            <h6>{{ book.author }}</h6>
+            <p>
+                <strong>Price: {{ book.price }} </strong>
+            </p>
+        </div>
+        <div class="btn-group" role="group" aria-label="Button group with nested dropdown" (click)="isCollapsed = !isCollapsed" (clickOutside)="!isCollapsed ? isCollapsed = !isCollapsed: null">
+            <div class="btn-group" role="group">
+                <button id="btnGroupDrop1" type="button" class="btn btn-light dropdown-toggle" data-toggle="dropdown" aria-haspopup="true"
+                    aria-expanded="false">
+                    
+                </button>
+                <div class="dropdown-menu" aria-labelledby="btnGroupDrop1" [ngbCollapse]="isCollapsed">
+                    <a class="dropdown-item" (click)="onAddToCart()">Add to shopping cart</a>
+                    <a class="dropdown-item" (click)="onClickHandler()">More details</a>
+                </div>
+            </div>
+        </div>
+        <p (click)="onClickHandler()">Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. Cras purus odio, vestibulum in
+        vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis
+        in faucibus.</p>
+    </div>
+</li>

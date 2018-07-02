@@ -1,0 +1,17 @@
+.price {
+    color: rgb(177, 39, 4);
+    text-transform: uppercase;
+}
+span.link {
+    color: #007bff;
+    margin-left: 10px;
+}
+
+span.link:hover {
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+span.quantity {
+    margin-right: 10px;
+}
